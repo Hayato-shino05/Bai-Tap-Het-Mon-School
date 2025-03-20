@@ -9,8 +9,10 @@
 <body>
     <header>
         <div class="logo">
-            <img src="picture/logo.png" alt="Logo Trường THPT Hàm Rồng">
-            <h1>Trường THPT Hàm Rồng</h1>
+            <a href="index.html">
+                <img src="picture/logo.png" alt="Logo Trường THPT Hàm Rồng">
+                <h1>THPT Hàm Rồng</h1>
+            </a>
         </div>
         <div class="search">
             <input type="text" placeholder="Tìm kiếm...">
@@ -20,30 +22,39 @@
 
     <nav>
         <ul class="menu">
-            <li><a href="#">Trang chủ</a></li>
+            <li><a href="index.html">Trang chủ</a></li>
             <li>
-                <a href="#">Giới thiệu</a>
+                <span>Giới thiệu</span>
                 <ul class="submenu">
-                    <li><a href="#">Lịch sử</a></li>
-                    <li><a href="#">Cơ sở vật chất</a></li>
-                    <li><a href="#">Đội ngũ giáo viên</a></li>
+                    <li><a href="pages/about.html">Lịch sử phát triển</a></li>
+                    <li><a href="pages/about.html">Cơ sở vật chất</a></li>
+                    <li><a href="pages/about.html">Đội ngũ giáo viên</a></li>
                 </ul>
             </li>
             <li>
-                <a href="#">Đào tạo</a>
+                <span>Tin tức</span>
                 <ul class="submenu">
-                    <li><a href="#">Chương trình học</a></li>
-                    <li><a href="#">Lịch học</a></li>
+                    <li><a href="pages/news.html">Tin tức mới nhất</a></li>
+                    <li><a href="pages/news/graduation-2024.html">Lễ tốt nghiệp 2024</a></li>
+                    <li><a href="pages/news.html">Sự kiện</a></li>
                 </ul>
             </li>
             <li>
-                <a href="#">Tuyển sinh</a>
+                <span>Tuyển sinh</span>
                 <ul class="submenu">
-                    <li><a href="#">Thông tin tuyển sinh</a></li>
-                    <li><a href="#">Đăng ký học</a></li>
+                    <li><a href="pages/tuyensinh.html">Thủ tục nhập học</a></li>
+                    <li><a href="pages/tuyensinh.html">Lịch tuyển sinh</a></li>
+                    <li><a href="pages/tuyensinh.html">Học phí</a></li>
                 </ul>
             </li>
-            <li><a href="#">Liên hệ</a></li>
+            <li>
+                <span>Liên hệ</span>
+                <ul class="submenu">
+                    <li><a href="pages/about.html">Đội ngũ giáo viên</a></li>
+                    <li><a href="pages/news.html">Sự kiện gần đây</a></li>
+                    <li><a href="pages/tuyensinh.html">Thông tin học phí</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 
@@ -60,13 +71,13 @@
                     <img src="picture/1.png" alt="Lễ khai giảng năm học mới">
                     <h3>Lễ khai giảng năm học 2025-2026</h3>
                     <p>Trường THPT Hàm Rồng tổ chức lễ khai giảng năm học mới với nhiều hoạt động ý nghĩa.</p>
-                    <a href="#">Xem thêm</a>
+                    <a href="pages/news/graduation-2024.html">Xem thêm</a>
                 </div>
                 <div class="news-item">
                     <img src="picture/2.png" alt="Cuộc thi học sinh giỏi">
                     <h3>Học sinh đạt giải cao tại kỳ thi học sinh giỏi cấp tỉnh</h3>
                     <p>Đoàn học sinh của trường đạt 3 giải Nhất, 5 giải Nhì tại kỳ thi học sinh giỏi cấp tỉnh.</p>
-                    <a href="#">Xem thêm</a>
+                    <a href="pages/news.html">Xem thêm</a>
                 </div>
                 <div class="news-item">
                     <img src="picture/3.png" alt="Hội thảo hướng nghiệp">
@@ -107,27 +118,57 @@
 
     <footer>
         <div class="footer-info">
-            <div>
-                <h3>Trường THPT Hàm Rồng</h3>
-                <p>Nơi ươm mầm tri thức, phát triển tài năng</p>
-            </div>
-            <div>
-                <h3>Liên hệ</h3>
-                <p>Địa chỉ: Số 123 Đường Lê Duẩn, Quận 1, TP.HCM</p>
-                <p>Điện thoại: (028) 3829 1234</p>
-                <p>Email: info@thpthamrong.edu.vn</p>
-            </div>
-            <div>
-                <h3>Mạng xã hội</h3>
-                <div class="social">
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">YouTube</a>
+            <div class="footer-section">
+                <h3>Về Trường THPT Hàm Rồng</h3>
+                <p>Trường THPT Hàm Rồng là môi trường giáo dục chất lượng cao, nơi ươm mầm những tài năng trẻ và phát triển toàn diện các kỹ năng cho học sinh.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
+
+            <div class="footer-section">
+                <h3>Liên Kết Nhanh</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i>Trang chủ</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i>Giới thiệu</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i>Tuyển sinh</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i>Tin tức & Sự kiện</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i>Thư viện</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Thông Tin Liên Hệ</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i>Số 123 Đường Lê Duẩn, Quận 1, TP.HCM</a></li>
+                    <li><a href="tel:02838291234"><i class="fas fa-phone"></i>(028) 3829 1234</a></li>
+                    <li><a href="mailto:info@thpthamrong.edu.vn"><i class="fas fa-envelope"></i>info@thpthamrong.edu.vn</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i>Thứ 2 - Thứ 6: 7:00 - 17:00</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Bản Tin</h3>
+                <p>Đăng ký nhận bản tin để cập nhật những thông tin mới nhất từ nhà trường</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email của bạn">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
         </div>
-        <p class="copyright">© 2025 Trường THPT Hàm Rồng. Tất cả các quyền được bảo lưu.</p>
+
+        <div class="footer-bottom">
+            <p class="copyright">© 2025 Trường THPT Hàm Rồng. Tất cả các quyền được bảo lưu. | Design by: <a href="https://github.com/hayato-shino05" target="_blank" class="designer-link">Hayato-shino05</a></p>
+            <div class="footer-bottom-links">
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật</a>
+                <a href="#">Sơ đồ website</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

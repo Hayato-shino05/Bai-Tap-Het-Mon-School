@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức - Trường THPT Hàm Rồng</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../picture/logo.png" alt="Logo Trường THPT Hàm Rồng">
+                <h1>THPT Hàm Rồng</h1>
+            </a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Tìm kiếm thông tin...">
+            <button type="button" aria-label="Tìm kiếm">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li>
+                <span>Giới thiệu</span>
+                <ul class="submenu">
+                    <li><a href="about.html">Lịch sử phát triển</a></li>
+                    <li><a href="about.html">Cơ sở vật chất</a></li>
+                    <li><a href="about.html">Đội ngũ giáo viên</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Tin tức</span>
+                <ul class="submenu">
+                    <li><a href="news.html">Tin tức mới nhất</a></li>
+                    <li><a href="news/graduation-2024.html">Lễ tốt nghiệp 2024</a></li>
+                    <li><a href="news.html">Sự kiện</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Tuyển sinh</span>
+                <ul class="submenu">
+                    <li><a href="tuyensinh.html">Thủ tục nhập học</a></li>
+                    <li><a href="tuyensinh.html">Lịch tuyển sinh</a></li>
+                    <li><a href="tuyensinh.html">Học phí</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Liên hệ</span>
+                <ul class="submenu">
+                    <li><a href="about.html">Đội ngũ giáo viên</a></li>
+                    <li><a href="news.html">Sự kiện gần đây</a></li>
+                    <li><a href="tuyensinh.html">Thông tin học phí</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="news-header">
+            <h1>Tin tức & Sự kiện</h1>
+            <div class="news-categories">
+                <a href="#" class="active">Tất cả</a>
+                <a href="#">Hoạt động học tập</a>
+                <a href="#">Sự kiện</a>
+                <a href="#">Thành tích</a>
+                <a href="#">Thông báo</a>
+            </div>
+        </section>
+
+        <section class="featured-news">
+            <div class="featured-news-item">
+                <img src="../picture/1.png" alt="Lễ tốt nghiệp">
+                <div class="featured-news-content">
+                    <span class="news-category">Sự kiện</span>
+                    <h2>Lễ tốt nghiệp khóa 2023-2024: Hành trình mới bắt đầu</h2>
+                    <p class="news-meta">
+                        <i class="far fa-calendar"></i> 15/05/2024
+                        <i class="far fa-user"></i> Admin
+                    </p>
+                    <p class="news-excerpt">Hơn 500 học sinh khối 12 đã chính thức kết thúc chương trình học tại trường trong không khí xúc động và tự hào. Buổi lễ có sự tham dự của đại diện Sở Giáo dục, ban giám hiệu, quý thầy cô và phụ huynh học sinh.</p>
+                    <a href="news/graduation-2024.html" class="btn">Đọc tiếp</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-grid">
+            <article class="news-item">
+                <img src="../picture/2.png" alt="Olympic Toán học">
+                <div class="news-content">
+                    <span class="news-category">Thành tích</span>
+                    <h3>Đội tuyển Olympic Toán đạt thành tích xuất sắc</h3>
+                    <p class="news-meta">
+                        <i class="far fa-calendar"></i> 10/05/2024
+                    </p>
+                    <p>Đội tuyển Olympic Toán của trường đã xuất sắc giành 3 huy chương vàng, 2 huy chương bạc tại kỳ thi Olympic Toán học quốc gia 2024.</p>
+                    <a href="news/math-olympiad-2024.html">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="news-item">
+                <img src="../picture/3.png" alt="Hội chợ Khoa học">
+                <div class="news-content">
+                    <span class="news-category">Hoạt động học tập</span>
+                    <h3>Hội chợ Khoa học Công nghệ 2024</h3>
+                    <p class="news-meta">
+                        <i class="far fa-calendar"></i> 05/05/2024
+                    </p>
+                    <p>Hơn 50 dự án khoa học sáng tạo của học sinh được trưng bày và đánh giá bởi các chuyên gia trong ngành.</p>
+                    <a href="news/science-fair-2024.html">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="news-item">
+                <img src="../picture/1.png" alt="Ngày hội Thể thao">
+                <div class="news-content">
+                    <span class="news-category">Sự kiện</span>
+                    <h3>Ngày hội Thể thao trường THPT Hàm Rồng</h3>
+                    <p class="news-meta">
+                        <i class="far fa-calendar"></i> 01/05/2024
+                    </p>
+                    <p>Sự kiện thể thao thường niên với nhiều môn thi đấu hấp dẫn và những giải thưởng giá trị.</p>
+                    <a href="news/sports-day-2024.html">Xem thêm</a>
+                </div>
+            </article>
+        </section>
+
+        <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <span>...</span>
+            <a href="#">10</a>
+            <a href="#" class="next">Trang sau <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Copy footer from index.html -->
+    </footer>
+
+    <script>
+        // Copy scripts from index.html
+    </script>
+</body>
+</html> 
