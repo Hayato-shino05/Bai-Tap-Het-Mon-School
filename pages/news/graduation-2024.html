@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lễ tốt nghiệp khóa 2023-2024 - THPT Hàm Rồng</title>
+    <meta name="description" content="Lễ tốt nghiệp khóa 2023-2024 tại Trường THPT Hàm Rồng - Khoảnh khắc tự hào của thầy trò">
+    <meta name="keywords" content="THPT Hàm Rồng, lễ tốt nghiệp, khóa 2023-2024, học sinh tốt nghiệp">
+    <title>Lễ tốt nghiệp khóa 2023-2024 - Trường THPT Hàm Rồng</title>
     <link rel="stylesheet" href="../../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="logo">
             <a href="../../index.html">
-                <img src="../../picture/logo.png" alt="Logo Trường THPT Hàm Rồng">
-                <h1>THPT Hàm Rồng</h1>
+                <img src="../../picture/logo.png" alt="Logo Trường THPT Hàm Rồng" width="60" height="60">
+                <div class="logo-text">
+                    <h1>THPT Hàm Rồng</h1>
+                    <p class="slogan">Nơi ươm mầm tài năng - Phát triển toàn diện</p>
+                </div>
             </a>
         </div>
         <div class="search">
-            <input type="text" placeholder="Tìm kiếm thông tin...">
-            <button type="button" aria-label="Tìm kiếm">
-                <i class="fas fa-search"></i>
-            </button>
+            <form action="/search" method="get" role="search">
+                <input type="search" name="q" placeholder="Tìm kiếm..." aria-label="Tìm kiếm">
+                <button type="submit" aria-label="Tìm kiếm"><i class="fas fa-search"></i></button>
+            </form>
         </div>
     </header>
 
@@ -32,6 +39,8 @@
                     <li><a href="../about.html">Lịch sử phát triển</a></li>
                     <li><a href="../about.html">Cơ sở vật chất</a></li>
                     <li><a href="../about.html">Đội ngũ giáo viên</a></li>
+                    <li><a href="../about.html">Thành tích nhà trường</a></li>
+                    <li><a href="../about.html">Tầm nhìn - Sứ mệnh</a></li>
                 </ul>
             </li>
             <li>
@@ -40,6 +49,8 @@
                     <li><a href="../news.html">Tin tức mới nhất</a></li>
                     <li><a href="graduation-2024.html">Lễ tốt nghiệp 2024</a></li>
                     <li><a href="../news.html">Sự kiện</a></li>
+                    <li><a href="../news.html">Thông báo</a></li>
+                    <li><a href="../news.html">Hoạt động đoàn thể</a></li>
                 </ul>
             </li>
             <li>
@@ -48,124 +59,224 @@
                     <li><a href="../tuyensinh.html">Thủ tục nhập học</a></li>
                     <li><a href="../tuyensinh.html">Lịch tuyển sinh</a></li>
                     <li><a href="../tuyensinh.html">Học phí</a></li>
+                    <li><a href="../tuyensinh.html">Chính sách học bổng</a></li>
+                    <li><a href="../tuyensinh.html">Câu hỏi thường gặp</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Đào tạo</span>
+                <ul class="submenu">
+                    <li><a href="../daotao.html">Chương trình đào tạo</a></li>
+                    <li><a href="../daotao.html">Lịch học - Lịch thi</a></li>
+                    <li><a href="../daotao.html">Kết quả học tập</a></li>
+                    <li><a href="../daotao.html">Hoạt động ngoại khóa</a></li>
+                    <li><a href="../daotao.html">Hướng nghiệp</a></li>
                 </ul>
             </li>
             <li>
                 <span>Liên hệ</span>
                 <ul class="submenu">
-                    <li><a href="../about.html">Đội ngũ giáo viên</a></li>
-                    <li><a href="../news.html">Sự kiện gần đây</a></li>
-                    <li><a href="../tuyensinh.html">Thông tin học phí</a></li>
+                    <li><a href="../contact.html">Thông tin liên hệ</a></li>
+                    <li><a href="../contact.html">Bản đồ</a></li>
+                    <li><a href="../contact.html">Góp ý</a></li>
+                    <li><a href="../contact.html">Tuyển dụng</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 
-    <main class="article-page">
-        <article class="news-article">
-            <div class="article-header">
-                <nav class="breadcrumb">
-                    <a href="../../index.html">Trang chủ</a> /
-                    <a href="../news.html">Tin tức</a> /
-                    <span>Lễ tốt nghiệp khóa 2023-2024</span>
-                </nav>
-                <span class="news-category">Sự kiện</span>
-                <h1>Lễ tốt nghiệp khóa 2023-2024: Hành trình mới bắt đầu</h1>
-                <div class="article-meta">
-                    <span><i class="far fa-calendar"></i> 15/05/2024</span>
-                    <span><i class="far fa-user"></i> Admin</span>
-                    <span><i class="far fa-eye"></i> 1,234 lượt xem</span>
-                </div>
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-content">
+                <h1>Lễ tốt nghiệp khóa 2023-2024</h1>
+                <p>Khoảnh khắc tự hào của thầy và trò Trường THPT Hàm Rồng</p>
             </div>
+        </section>
 
-            <div class="article-featured-image">
-                <img src="../../picture/1.png" alt="Lễ tốt nghiệp">
-                <p class="image-caption">Các em học sinh trong buổi lễ tốt nghiệp trang trọng</p>
-            </div>
-
-            <div class="article-content">
-                <p class="article-excerpt">
-                    Hơn 500 học sinh khối 12 đã chính thức kết thúc chương trình học tại trường trong không khí xúc động và tự hào. Buổi lễ có sự tham dự của đại diện Sở Giáo dục, ban giám hiệu, quý thầy cô và phụ huynh học sinh.
-                </p>
-
-                <h2>Thành tích ấn tượng của khóa 2023-2024</h2>
-                <p>
-                    Khóa học sinh 2023-2024 đã đạt được nhiều thành tích xuất sắc trong học tập và các hoạt động ngoại khóa:
-                </p>
-                <ul>
-                    <li>95% học sinh đạt điểm tốt nghiệp trên 8.0</li>
-                    <li>15 học sinh đạt giải trong kỳ thi học sinh giỏi quốc gia</li>
-                    <li>100% học sinh đậu tốt nghiệp THPT</li>
-                    <li>85% học sinh đậu vào các trường đại học công lập</li>
-                </ul>
-
-                <h2>Những khoảnh khắc đáng nhớ</h2>
-                <div class="image-gallery">
-                    <figure>
-                        <img src="../../picture/2.png" alt="Lễ tốt nghiệp 1">
-                        <figcaption>Các em học sinh nhận bằng tốt nghiệp</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="../../picture/3.png" alt="Lễ tốt nghiệp 2">
-                        <figcaption>Tiết mục văn nghệ của học sinh</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="../../picture/1.png" alt="Lễ tốt nghiệp 3">
-                        <figcaption>Khoảnh khắc xúc động chia tay thầy cô</figcaption>
-                    </figure>
+        <article class="news-details" data-aos="fade-up">
+            <div class="container">
+                <div class="news-meta">
+                    <span class="news-date"><i class="far fa-calendar-alt"></i> 30/05/2024</span>
+                    <span class="news-author"><i class="far fa-user"></i> Ban Truyền thông</span>
+                    <span class="news-category event"><i class="far fa-folder"></i> Sự kiện</span>
+                    <span class="news-views"><i class="far fa-eye"></i> 1,256 lượt xem</span>
                 </div>
 
-                <h2>Phát biểu của Ban Giám hiệu</h2>
-                <blockquote>
-                    "Các em đã trưởng thành và sẵn sàng cho một hành trình mới. Nhà trường tin tưởng rằng với nền tảng kiến thức và kỹ năng đã được trang bị, các em sẽ thành công trên con đường phía trước."
-                    <cite>- ThS. Nguyễn Văn A, Hiệu trưởng</cite>
-                </blockquote>
-
-                <div class="article-tags">
-                    <i class="fas fa-tags"></i>
-                    <a href="#">Lễ tốt nghiệp</a>
-                    <a href="#">Khóa 2024</a>
-                    <a href="#">Sự kiện</a>
-                    <a href="#">Thành tích</a>
+                <div class="news-featured-image" data-aos="zoom-in">
+                    <img src="../../picture/1.png" alt="Lễ tốt nghiệp khóa 2023-2024" width="100%" height="500">
+                    <p class="image-caption">Toàn cảnh buổi lễ tốt nghiệp khóa 2023-2024 tại hội trường lớn Trường THPT Hàm Rồng</p>
                 </div>
 
-                <div class="share-buttons">
+                <div class="news-content">
+                    <p data-aos="fade-up">Ngày 30/5/2024, Trường THPT Hàm Rồng đã long trọng tổ chức <strong>Lễ tốt nghiệp và tri ân</strong> cho học sinh khóa 2023-2024. Buổi lễ diễn ra trong không khí trang trọng và đầy xúc động với sự tham dự của Ban Giám hiệu nhà trường, quý thầy cô giáo, đại diện hội phụ huynh và hơn 500 học sinh khối 12.</p>
+
+                    <h2 data-aos="fade-up">Những thành tích đáng tự hào</h2>
+                    <p data-aos="fade-up">Phát biểu khai mạc buổi lễ, ThS. Nguyễn Văn A - Hiệu trưởng nhà trường đã gửi lời chúc mừng đến toàn thể học sinh khóa 2023-2024 đã hoàn thành chương trình THPT và đạt được nhiều thành tích xuất sắc:</p>
+                    <ul data-aos="fade-up">
+                        <li>100% học sinh đạt tốt nghiệp THPT, trong đó 85% đạt loại Khá trở lên.</li>
+                        <li>95% học sinh trúng tuyển vào các trường đại học, cao đẳng.</li>
+                        <li>15 học sinh đạt giải trong kỳ thi học sinh giỏi cấp thành phố và quốc gia.</li>
+                        <li>Nhiều học sinh nhận được học bổng du học tại các nước: Mỹ, Anh, Úc, Singapore.</li>
+                    </ul>
+
+                    <div class="quote" data-aos="fade-up">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>
+                            Thành công hôm nay của các em là kết quả của sự nỗ lực không ngừng nghỉ, là minh chứng cho tinh thần học tập chăm chỉ và ý chí vượt khó. Nhà trường tin rằng với nền tảng kiến thức và kỹ năng đã được trang bị, các em sẽ tự tin bước vào chặng đường mới, tiếp tục phát huy truyền thống tốt đẹp của Trường THPT Hàm Rồng.
+                        </blockquote>
+                        <p class="quote-author">- ThS. Nguyễn Văn A, Hiệu trưởng Trường THPT Hàm Rồng -</p>
+                    </div>
+
+                    <h2 data-aos="fade-up">Những khoảnh khắc đáng nhớ</h2>
+                    <p data-aos="fade-up">Buổi lễ đã diễn ra với nhiều hoạt động ý nghĩa, để lại những kỷ niệm khó quên trong lòng thầy trò và phụ huynh:</p>
+
+                    <div class="image-gallery" data-aos="fade-up">
+                        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                            <img src="../../picture/2.png" alt="Trao bằng tốt nghiệp" width="300" height="200">
+                            <p class="image-caption">Thầy Hiệu trưởng trao bằng tốt nghiệp cho học sinh xuất sắc</p>
+                        </div>
+                        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="../../picture/3.png" alt="Học sinh tặng hoa tri ân" width="300" height="200">
+                            <p class="image-caption">Học sinh tặng hoa tri ân thầy cô giáo</p>
+                        </div>
+                        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                            <img src="../../picture/1.png" alt="Tiết mục văn nghệ" width="300" height="200">
+                            <p class="image-caption">Tiết mục văn nghệ đặc sắc do học sinh biểu diễn</p>
+                        </div>
+                    </div>
+
+                    <p data-aos="fade-up">Đặc biệt, trong buổi lễ, nhà trường đã trao 20 suất học bổng cho những học sinh có thành tích xuất sắc và tuyên dương 50 học sinh tiêu biểu đã đạt thành tích cao trong học tập và hoạt động ngoại khóa.</p>
+
+                    <h2 data-aos="fade-up">Lời tri ân từ học sinh</h2>
+                    <p data-aos="fade-up">Đại diện cho học sinh khóa 2023-2024, em Trần Thị B - Học sinh lớp 12A1, Thủ khoa khối 12 đã phát biểu cảm nghĩ và gửi lời cảm ơn sâu sắc đến Ban Giám hiệu, quý thầy cô giáo và phụ huynh đã đồng hành, hỗ trợ học sinh trong suốt 3 năm học tại trường:</p>
+
+                    <div class="quote" data-aos="fade-up">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>
+                            Thời gian 3 năm học tại Trường THPT Hàm Rồng là khoảng thời gian quý giá và đáng nhớ nhất trong cuộc đời học sinh chúng em. Tại ngôi trường này, chúng em không chỉ được trang bị kiến thức chuyên môn mà còn được rèn luyện kỹ năng sống, phát triển tư duy sáng tạo và bản lĩnh vững vàng. Chúng em xin gửi lời cảm ơn chân thành đến quý thầy cô đã tận tâm, tận lực vì sự trưởng thành của chúng em. Dù mai này có đi đâu, chúng em vẫn luôn tự hào là học sinh của Trường THPT Hàm Rồng.
+                        </blockquote>
+                        <p class="quote-author">- Trần Thị B, Học sinh lớp 12A1 -</p>
+                    </div>
+
+                    <h2 data-aos="fade-up">Chuẩn bị cho hành trình mới</h2>
+                    <p data-aos="fade-up">Kết thúc buổi lễ, học sinh khóa 2023-2024 đã cùng nhau thực hiện nghi thức chuyển giao truyền thống cho khóa sau và thả bóng bay mang theo những ước mơ, hoài bão vào bầu trời, khép lại 3 năm học tập tại trường và sẵn sàng cho một chặng đường mới đầy hứa hẹn.</p>
+
+                    <p data-aos="fade-up">Trường THPT Hàm Rồng tin tưởng rằng, với nền tảng kiến thức và kỹ năng đã được trang bị, các em học sinh sẽ tiếp tục phát huy truyền thống tốt đẹp của nhà trường, gặt hái nhiều thành công trên con đường học tập và sự nghiệp tương lai.</p>
+                </div>
+
+                <div class="news-tags" data-aos="fade-up">
+                    <span class="tag-label">Thẻ:</span>
+                    <a href="#" class="tag">Lễ tốt nghiệp</a>
+                    <a href="#" class="tag">Khóa 2023-2024</a>
+                    <a href="#" class="tag">Tri ân</a>
+                    <a href="#" class="tag">Sự kiện</a>
+                </div>
+
+                <div class="share-buttons" data-aos="fade-up">
                     <span>Chia sẻ:</span>
-                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="share-btn facebook" aria-label="Chia sẻ qua Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="share-btn twitter" aria-label="Chia sẻ qua Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="share-btn linkedin" aria-label="Chia sẻ qua LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="share-btn email" aria-label="Chia sẻ qua Email"><i class="fas fa-envelope"></i></a>
+                </div>
+
+                <div class="related-news" data-aos="fade-up">
+                    <h3>Tin liên quan</h3>
+                    <div class="related-news-grid">
+                        <div class="related-news-item" data-aos="fade-up" data-aos-delay="100">
+                            <img src="../../picture/2.png" alt="Hội thảo hướng nghiệp" width="120" height="80">
+                            <div class="related-news-content">
+                                <h4><a href="#">Hội thảo hướng nghiệp "Định hướng tương lai"</a></h4>
+                                <p class="news-date"><i class="far fa-calendar-alt"></i> 15/05/2024</p>
+                            </div>
+                        </div>
+                        <div class="related-news-item" data-aos="fade-up" data-aos-delay="200">
+                            <img src="../../picture/3.png" alt="Cuộc thi Tiếng Anh" width="120" height="80">
+                            <div class="related-news-content">
+                                <h4><a href="#">Cuộc thi "English Challenge 2024"</a></h4>
+                                <p class="news-date"><i class="far fa-calendar-alt"></i> 10/04/2024</p>
+                            </div>
+                        </div>
+                        <div class="related-news-item" data-aos="fade-up" data-aos-delay="300">
+                            <img src="../../picture/1.png" alt="Kết quả học kỳ I" width="120" height="80">
+                            <div class="related-news-content">
+                                <h4><a href="#">Tổng kết học kỳ I năm học 2023-2024</a></h4>
+                                <p class="news-date"><i class="far fa-calendar-alt"></i> 15/01/2024</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </article>
-
-        <aside class="related-news">
-            <h3>Tin tức liên quan</h3>
-            <div class="related-news-grid">
-                <a href="#" class="related-news-item">
-                    <img src="../../picture/2.png" alt="Tin tức liên quan">
-                    <h4>Kết quả kỳ thi học sinh giỏi cấp thành phố</h4>
-                    <span class="news-date"><i class="far fa-calendar"></i> 10/05/2024</span>
-                </a>
-                <a href="#" class="related-news-item">
-                    <img src="../../picture/3.png" alt="Tin tức liên quan">
-                    <h4>Hoạt động ngoại khóa cuối năm học</h4>
-                    <span class="news-date"><i class="far fa-calendar"></i> 05/05/2024</span>
-                </a>
-                <a href="#" class="related-news-item">
-                    <img src="../../picture/1.png" alt="Tin tức liên quan">
-                    <h4>Thông tin tuyển sinh năm học 2024-2025</h4>
-                    <span class="news-date"><i class="far fa-calendar"></i> 01/05/2024</span>
-                </a>
-            </div>
-        </aside>
     </main>
 
     <footer>
-        <!-- Copy footer from index.html -->
+        <div class="footer-info">
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+                <h3>Về Trường THPT Hàm Rồng</h3>
+                <p>Trường THPT Hàm Rồng là môi trường giáo dục chất lượng cao, nơi ươm mầm những tài năng trẻ và phát triển toàn diện các kỹ năng cho học sinh.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                <h3>Liên Kết Nhanh</h3>
+                <ul class="footer-links">
+                    <li><a href="../../index.html"><i class="fas fa-chevron-right"></i>Trang chủ</a></li>
+                    <li><a href="../about.html"><i class="fas fa-chevron-right"></i>Giới thiệu</a></li>
+                    <li><a href="../tuyensinh.html"><i class="fas fa-chevron-right"></i>Tuyển sinh</a></li>
+                    <li><a href="../news.html"><i class="fas fa-chevron-right"></i>Tin tức & Sự kiện</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i>Thư viện</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="300">
+                <h3>Thông Tin Liên Hệ</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i>Số 123 Đường Lê Duẩn, Quận 1, TP.HCM</a></li>
+                    <li><a href="tel:02838291234"><i class="fas fa-phone"></i>(028) 3829 1234</a></li>
+                    <li><a href="mailto:info@thpthamrong.edu.vn"><i class="fas fa-envelope"></i>info@thpthamrong.edu.vn</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i>Thứ 2 - Thứ 6: 7:00 - 17:00</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="400">
+                <h3>Bản Tin</h3>
+                <p>Đăng ký nhận bản tin để cập nhật những thông tin mới nhất từ nhà trường</p>
+                <form class="newsletter-form" action="/subscribe" method="post">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email của bạn" required>
+                        <button type="submit" aria-label="Đăng ký"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">© 2024 Trường THPT Hàm Rồng. Tất cả các quyền được bảo lưu. | Design by: <a href="https://github.com/hayato-shino05" target="_blank" rel="noopener noreferrer" class="designer-link">Hayato-shino05</a></p>
+            <div class="footer-bottom-links">
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật</a>
+                <a href="#">Sơ đồ website</a>
+            </div>
+        </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Copy scripts from index.html
+        document.addEventListener('DOMContentLoaded', function() {
+            // Khởi tạo hiệu ứng AOS
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+        });
     </script>
 </body>
 </html> 

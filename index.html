@@ -3,32 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trường THPT Hàm Rồng - Môi trường giáo dục chất lượng cao, nơi ươm mầm tài năng trẻ">
+    <meta name="keywords" content="THPT Hàm Rồng, trường học, giáo dục, tuyển sinh, học sinh giỏi">
     <title>Trường THPT Hàm Rồng</title>
-    <link rel="stylesheet" href="styles.css"
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="picture/logo.png" alt="Logo Trường THPT Hàm Rồng">
-                <h1>THPT Hàm Rồng</h1>
+                <img src="picture/logo.png" alt="Logo Trường THPT Hàm Rồng" width="80" height="80">
+                <div class="logo-text">
+                    <h1>THPT Hàm Rồng</h1>
+                    <p class="slogan">Nơi ươm mầm tài năng - Phát triển toàn diện</p>
+                </div>
             </a>
         </div>
         <div class="search">
-            <input type="text" placeholder="Tìm kiếm...">
-            <button>Tìm</button>
+            <form action="/search" method="get" role="search">
+                <input type="search" name="q" placeholder="Tìm kiếm..." aria-label="Tìm kiếm">
+                <button type="submit" aria-label="Tìm kiếm"><i class="fas fa-search"></i></button>
+            </form>
         </div>
     </header>
 
     <nav>
         <ul class="menu">
-            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="index.html" aria-current="page">Trang chủ</a></li>
             <li>
                 <span>Giới thiệu</span>
                 <ul class="submenu">
                     <li><a href="pages/about.html">Lịch sử phát triển</a></li>
                     <li><a href="pages/about.html">Cơ sở vật chất</a></li>
                     <li><a href="pages/about.html">Đội ngũ giáo viên</a></li>
+                    <li><a href="pages/about.html">Thành tích nhà trường</a></li>
+                    <li><a href="pages/about.html">Tầm nhìn - Sứ mệnh</a></li>
                 </ul>
             </li>
             <li>
@@ -37,6 +49,8 @@
                     <li><a href="pages/news.html">Tin tức mới nhất</a></li>
                     <li><a href="pages/news/graduation-2024.html">Lễ tốt nghiệp 2024</a></li>
                     <li><a href="pages/news.html">Sự kiện</a></li>
+                    <li><a href="pages/news.html">Thông báo</a></li>
+                    <li><a href="pages/news.html">Hoạt động đoàn thể</a></li>
                 </ul>
             </li>
             <li>
@@ -45,103 +59,243 @@
                     <li><a href="pages/tuyensinh.html">Thủ tục nhập học</a></li>
                     <li><a href="pages/tuyensinh.html">Lịch tuyển sinh</a></li>
                     <li><a href="pages/tuyensinh.html">Học phí</a></li>
+                    <li><a href="pages/tuyensinh.html">Chính sách học bổng</a></li>
+                    <li><a href="pages/tuyensinh.html">Câu hỏi thường gặp</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Đào tạo</span>
+                <ul class="submenu">
+                    <li><a href="pages/daotao.html">Chương trình đào tạo</a></li>
+                    <li><a href="pages/daotao.html">Lịch học - Lịch thi</a></li>
+                    <li><a href="pages/daotao.html">Kết quả học tập</a></li>
+                    <li><a href="pages/daotao.html">Hoạt động ngoại khóa</a></li>
+                    <li><a href="pages/daotao.html">Hướng nghiệp</a></li>
                 </ul>
             </li>
             <li>
                 <span>Liên hệ</span>
                 <ul class="submenu">
-                    <li><a href="pages/about.html">Đội ngũ giáo viên</a></li>
-                    <li><a href="pages/news.html">Sự kiện gần đây</a></li>
-                    <li><a href="pages/tuyensinh.html">Thông tin học phí</a></li>
+                    <li><a href="pages/contact.html">Thông tin liên hệ</a></li>
+                    <li><a href="pages/contact.html">Bản đồ</a></li>
+                    <li><a href="pages/contact.html">Góp ý</a></li>
+                    <li><a href="pages/contact.html">Tuyển dụng</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 
     <main>
-        <section class="important-news">
-            <h2>Thông báo quan trọng</h2>
-            <p>Trường thông báo lịch nghỉ Tết Nguyên Đán năm 2026 từ ngày 25/01/2026 đến hết ngày 05/02/2026.</p>
-        </section>
-
-        <section class="news">
-            <h2>Tin tức</h2>
-            <div class="news-container">
-                <div class="news-item">
-                    <img src="picture/1.png" alt="Lễ khai giảng năm học mới">
-                    <h3>Lễ khai giảng năm học 2025-2026</h3>
-                    <p>Trường THPT Hàm Rồng tổ chức lễ khai giảng năm học mới với nhiều hoạt động ý nghĩa.</p>
-                    <a href="pages/news/graduation-2024.html">Xem thêm</a>
-                </div>
-                <div class="news-item">
-                    <img src="picture/2.png" alt="Cuộc thi học sinh giỏi">
-                    <h3>Học sinh đạt giải cao tại kỳ thi học sinh giỏi cấp tỉnh</h3>
-                    <p>Đoàn học sinh của trường đạt 3 giải Nhất, 5 giải Nhì tại kỳ thi học sinh giỏi cấp tỉnh.</p>
-                    <a href="pages/news.html">Xem thêm</a>
-                </div>
-                <div class="news-item">
-                    <img src="picture/3.png" alt="Hội thảo hướng nghiệp">
-                    <h3>Hội thảo hướng nghiệp cho học sinh khối 12</h3>
-                    <p>Nhà trường tổ chức hội thảo hướng nghiệp với sự tham gia của các chuyên gia hàng đầu.</p>
-                    <a href="#">Xem thêm</a>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Chào mừng đến với Trường THPT Hàm Rồng</h2>
+                <p>Môi trường giáo dục chất lượng cao - Nơi ươm mầm những tài năng trẻ</p>
+                <div class="hero-buttons">
+                    <a href="pages/tuyensinh.html" class="btn btn-primary">Tuyển sinh 2024</a>
+                    <a href="pages/about.html" class="btn btn-secondary">Tìm hiểu thêm</a>
                 </div>
             </div>
         </section>
 
-        <section class="education">
-            <h2>Thông tin đào tạo</h2>
+        <section class="important-news" aria-labelledby="important-news-title" data-aos="fade-up">
+            <h2 id="important-news-title">Thông báo quan trọng</h2>
+            <div class="news-content">
+                <div class="news-item" data-aos="fade-right" data-aos-delay="100">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div class="news-text">
+                        <h3>Lịch nghỉ Tết Nguyên Đán 2024</h3>
+                        <p>Trường thông báo lịch nghỉ Tết Nguyên Đán năm 2024 từ ngày 25/01/2024 đến hết ngày 05/02/2024.</p>
+                    </div>
+                </div>
+                <div class="news-item" data-aos="fade-right" data-aos-delay="200">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="news-text">
+                        <h3>Kế hoạch tuyển sinh 2024</h3>
+                        <p>Thông báo kế hoạch tuyển sinh năm học 2024-2025 và các thông tin liên quan.</p>
+                    </div>
+                </div>
+                <div class="news-item" data-aos="fade-right" data-aos-delay="300">
+                    <i class="fas fa-trophy"></i>
+                    <div class="news-text">
+                        <h3>Thành tích học sinh giỏi</h3>
+                        <p>Chúc mừng học sinh đạt giải cao tại kỳ thi học sinh giỏi cấp tỉnh năm 2024.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news" aria-labelledby="news-title" data-aos="fade-up">
+            <h2 id="news-title">Tin tức mới nhất</h2>
+            <div class="news-container">
+                <article class="news-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="picture/1.png" alt="Lễ khai giảng năm học mới" loading="lazy" width="380" height="250">
+                    <div class="news-content">
+                        <span class="news-category">Sự kiện</span>
+                        <h3>Lễ khai giảng năm học 2024-2025</h3>
+                        <p>Trường THPT Hàm Rồng tổ chức lễ khai giảng năm học mới với nhiều hoạt động ý nghĩa.</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-calendar"></i> 05/09/2024</span>
+                            <span><i class="far fa-eye"></i> 1.2k lượt xem</span>
+                        </div>
+                        <a href="pages/news/graduation-2024.html" class="read-more">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="picture/2.png" alt="Cuộc thi học sinh giỏi" loading="lazy" width="380" height="250">
+                    <div class="news-content">
+                        <span class="news-category">Thành tích</span>
+                        <h3>Học sinh đạt giải cao tại kỳ thi học sinh giỏi cấp tỉnh</h3>
+                        <p>Đoàn học sinh của trường đạt 3 giải Nhất, 5 giải Nhì tại kỳ thi học sinh giỏi cấp tỉnh.</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-calendar"></i> 03/09/2024</span>
+                            <span><i class="far fa-eye"></i> 980 lượt xem</span>
+                        </div>
+                        <a href="pages/news.html" class="read-more">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="picture/3.png" alt="Hội thảo hướng nghiệp" loading="lazy" width="380" height="250">
+                    <div class="news-content">
+                        <span class="news-category">Hoạt động</span>
+                        <h3>Hội thảo hướng nghiệp cho học sinh khối 12</h3>
+                        <p>Nhà trường tổ chức hội thảo hướng nghiệp với sự tham gia của các chuyên gia hàng đầu.</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-calendar"></i> 01/09/2024</span>
+                            <span><i class="far fa-eye"></i> 850 lượt xem</span>
+                        </div>
+                        <a href="#" class="read-more">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="education" aria-labelledby="education-title" data-aos="fade-up">
+            <h2 id="education-title">Thông tin đào tạo</h2>
             <div class="education-container">
-                <div class="education-item">
+                <article class="education-item" data-aos="flip-left" data-aos-delay="100">
+                    <i class="fas fa-graduation-cap"></i>
                     <h3>Bậc Trung học phổ thông</h3>
                     <p>Chương trình giáo dục THPT chuẩn bị kiến thức vững chắc cho kỳ thi tốt nghiệp và đại học.</p>
-                </div>
-                <div class="education-item">
+                    <ul class="education-features">
+                        <li><i class="fas fa-check"></i> Chương trình học chuẩn Bộ GD&ĐT</li>
+                        <li><i class="fas fa-check"></i> Đội ngũ giáo viên giàu kinh nghiệm</li>
+                        <li><i class="fas fa-check"></i> Cơ sở vật chất hiện đại</li>
+                    </ul>
+                </article>
+                <article class="education-item" data-aos="flip-left" data-aos-delay="200">
+                    <i class="fas fa-trophy"></i>
                     <h3>Bồi dưỡng học sinh giỏi</h3>
                     <p>Các lớp bồi dưỡng học sinh giỏi Toán, Lý, Hóa, Văn, Anh với đội ngũ giáo viên giàu kinh nghiệm.</p>
-                </div>
-                <div class="education-item">
+                    <ul class="education-features">
+                        <li><i class="fas fa-check"></i> Chương trình nâng cao</li>
+                        <li><i class="fas fa-check"></i> Luyện thi học sinh giỏi</li>
+                        <li><i class="fas fa-check"></i> Phương pháp học tập hiệu quả</li>
+                    </ul>
+                </article>
+                <article class="education-item" data-aos="flip-left" data-aos-delay="300">
+                    <i class="fas fa-users"></i>
                     <h3>Hoạt động ngoại khóa</h3>
                     <p>Chương trình ngoại khóa đa dạng, phát triển kỹ năng mềm và tư duy sáng tạo cho học sinh.</p>
+                    <ul class="education-features">
+                        <li><i class="fas fa-check"></i> Câu lạc bộ học thuật</li>
+                        <li><i class="fas fa-check"></i> Hoạt động thể thao</li>
+                        <li><i class="fas fa-check"></i> Sự kiện văn hóa</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="stats" data-aos="fade-up">
+            <div class="stats-container">
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-user-graduate"></i>
+                    <div class="stat-number" data-count="5000">0</div>
+                    <div class="stat-label">Học sinh</div>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <div class="stat-number" data-count="200">0</div>
+                    <div class="stat-label">Giáo viên</div>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-trophy"></i>
+                    <div class="stat-number" data-count="100">0</div>
+                    <div class="stat-label">Giải thưởng</div>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-university"></i>
+                    <div class="stat-number" data-count="95">0</div>
+                    <div class="stat-label">Đỗ đại học</div>
                 </div>
             </div>
         </section>
 
-        <section class="contact">
-            <h2>Liên hệ</h2>
-            <div class="contact-info">
-                <p>Địa chỉ: Số 123 Đường Lê Duẩn, Quận 1, Thành phố Hồ Chí Minh</p>
-                <p>Điện thoại: (028) 3829 1234</p>
-                <p>Email: info@thpthamrong.edu.vn</p>
+        <section class="contact" aria-labelledby="contact-title" data-aos="fade-up">
+            <h2 id="contact-title">Liên hệ</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item" data-aos="fade-right" data-aos-delay="100">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-text">
+                            <h3>Địa chỉ</h3>
+                            <p>Số 123 Đường Lê Duẩn, Quận 1, Thành phố Hồ Chí Minh</p>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-aos="fade-right" data-aos-delay="200">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-text">
+                            <h3>Điện thoại</h3>
+                            <p><a href="tel:02838291234">(028) 3829 1234</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-aos="fade-right" data-aos-delay="300">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@thpthamrong.edu.vn">info@thpthamrong.edu.vn</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-aos="fade-right" data-aos-delay="400">
+                        <i class="fas fa-clock"></i>
+                        <div class="contact-text">
+                            <h3>Giờ làm việc</h3>
+                            <p>Thứ 2 - Thứ 6: 7:00 - 17:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map" data-aos="fade-left">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.269311907987!2d106.70042331545615!3d10.777201392219766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4e64f39c8d%3A0x8c4f0c7c7c7c7c7c!2zVHLGsOG7nW5nIFRIUFQgSMOgbeG6rXQgUsawxqFuZy!5e0!3m2!1svi!2s!4v1625767890123!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-info">
-            <div class="footer-section">
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
                 <h3>Về Trường THPT Hàm Rồng</h3>
                 <p>Trường THPT Hàm Rồng là môi trường giáo dục chất lượng cao, nơi ươm mầm những tài năng trẻ và phát triển toàn diện các kỹ năng cho học sinh.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
 
-            <div class="footer-section">
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
                 <h3>Liên Kết Nhanh</h3>
                 <ul class="footer-links">
-                    <li><a href="#"><i class="fas fa-chevron-right"></i>Trang chủ</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i>Giới thiệu</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i>Tuyển sinh</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i>Tin tức & Sự kiện</a></li>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i>Trang chủ</a></li>
+                    <li><a href="pages/about.html"><i class="fas fa-chevron-right"></i>Giới thiệu</a></li>
+                    <li><a href="pages/tuyensinh.html"><i class="fas fa-chevron-right"></i>Tuyển sinh</a></li>
+                    <li><a href="pages/news.html"><i class="fas fa-chevron-right"></i>Tin tức & Sự kiện</a></li>
                     <li><a href="#"><i class="fas fa-chevron-right"></i>Thư viện</a></li>
                 </ul>
             </div>
 
-            <div class="footer-section">
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="300">
                 <h3>Thông Tin Liên Hệ</h3>
                 <ul class="footer-links">
                     <li><a href="#"><i class="fas fa-map-marker-alt"></i>Số 123 Đường Lê Duẩn, Quận 1, TP.HCM</a></li>
@@ -151,18 +305,20 @@
                 </ul>
             </div>
 
-            <div class="footer-section">
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="400">
                 <h3>Bản Tin</h3>
                 <p>Đăng ký nhận bản tin để cập nhật những thông tin mới nhất từ nhà trường</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Email của bạn">
-                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                <form class="newsletter-form" action="/subscribe" method="post">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email của bạn" required>
+                        <button type="submit" aria-label="Đăng ký"><i class="fas fa-paper-plane"></i></button>
+                    </div>
                 </form>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p class="copyright">© 2025 Trường THPT Hàm Rồng. Tất cả các quyền được bảo lưu. | Design by: <a href="https://github.com/hayato-shino05" target="_blank" class="designer-link">Hayato-shino05</a></p>
+            <p class="copyright">© 2024 Trường THPT Hàm Rồng. Tất cả các quyền được bảo lưu. | Design by: <a href="https://github.com/hayato-shino05" target="_blank" rel="noopener noreferrer" class="designer-link">Hayato-shino05</a></p>
             <div class="footer-bottom-links">
                 <a href="#">Điều khoản sử dụng</a>
                 <a href="#">Chính sách bảo mật</a>
@@ -170,5 +326,51 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Khởi tạo hiệu ứng AOS
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+
+            // Hiệu ứng đếm số
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            const animateCounter = (el) => {
+                const target = parseInt(el.getAttribute('data-count'));
+                const duration = 2000;
+                const step = target / duration * 10;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += step;
+                    if (current > target) {
+                        el.textContent = target + (target === 95 ? '%' : '+');
+                        clearInterval(timer);
+                    } else {
+                        el.textContent = Math.floor(current) + (target === 95 ? '%' : '+');
+                    }
+                }, 10);
+            };
+
+            // Kích hoạt hiệu ứng đếm khi phần tử xuất hiện trong viewport
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounter(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            statNumbers.forEach(number => {
+                observer.observe(number);
+            });
+        });
+    </script>
 </body>
 </html>

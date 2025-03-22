@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thông tin tuyển sinh Trường THPT Hàm Rồng - Thủ tục nhập học, lịch tuyển sinh và học phí">
+    <meta name="keywords" content="THPT Hàm Rồng, tuyển sinh, thủ tục nhập học, lịch tuyển sinh, học phí, học bổng">
     <title>Tuyển sinh - Trường THPT Hàm Rồng</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="logo">
             <a href="../index.html">
-                <img src="../picture/logo.png" alt="Logo Trường THPT Hàm Rồng">
-                <h1>THPT Hàm Rồng</h1>
+                <img src="../picture/logo.png" alt="Logo Trường THPT Hàm Rồng" width="60" height="60">
+                <div class="logo-text">
+                    <h1>THPT Hàm Rồng</h1>
+                    <p class="slogan">Nơi ươm mầm tài năng - Phát triển toàn diện</p>
+                </div>
             </a>
         </div>
         <div class="search">
-            <input type="text" placeholder="Tìm kiếm thông tin...">
-            <button type="button" aria-label="Tìm kiếm">
-                <i class="fas fa-search"></i>
-            </button>
+            <form action="/search" method="get" role="search">
+                <input type="search" name="q" placeholder="Tìm kiếm..." aria-label="Tìm kiếm">
+                <button type="submit" aria-label="Tìm kiếm"><i class="fas fa-search"></i></button>
+            </form>
         </div>
     </header>
 
@@ -32,6 +39,8 @@
                     <li><a href="about.html">Lịch sử phát triển</a></li>
                     <li><a href="about.html">Cơ sở vật chất</a></li>
                     <li><a href="about.html">Đội ngũ giáo viên</a></li>
+                    <li><a href="about.html">Thành tích nhà trường</a></li>
+                    <li><a href="about.html">Tầm nhìn - Sứ mệnh</a></li>
                 </ul>
             </li>
             <li>
@@ -40,6 +49,8 @@
                     <li><a href="news.html">Tin tức mới nhất</a></li>
                     <li><a href="news/graduation-2024.html">Lễ tốt nghiệp 2024</a></li>
                     <li><a href="news.html">Sự kiện</a></li>
+                    <li><a href="news.html">Thông báo</a></li>
+                    <li><a href="news.html">Hoạt động đoàn thể</a></li>
                 </ul>
             </li>
             <li>
@@ -48,119 +59,368 @@
                     <li><a href="tuyensinh.html">Thủ tục nhập học</a></li>
                     <li><a href="tuyensinh.html">Lịch tuyển sinh</a></li>
                     <li><a href="tuyensinh.html">Học phí</a></li>
+                    <li><a href="tuyensinh.html">Chính sách học bổng</a></li>
+                    <li><a href="tuyensinh.html">Câu hỏi thường gặp</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Đào tạo</span>
+                <ul class="submenu">
+                    <li><a href="daotao.html">Chương trình đào tạo</a></li>
+                    <li><a href="daotao.html">Lịch học - Lịch thi</a></li>
+                    <li><a href="daotao.html">Kết quả học tập</a></li>
+                    <li><a href="daotao.html">Hoạt động ngoại khóa</a></li>
+                    <li><a href="daotao.html">Hướng nghiệp</a></li>
                 </ul>
             </li>
             <li>
                 <span>Liên hệ</span>
                 <ul class="submenu">
-                    <li><a href="about.html">Đội ngũ giáo viên</a></li>
-                    <li><a href="news.html">Sự kiện gần đây</a></li>
-                    <li><a href="tuyensinh.html">Thông tin học phí</a></li>
+                    <li><a href="contact.html">Thông tin liên hệ</a></li>
+                    <li><a href="contact.html">Bản đồ</a></li>
+                    <li><a href="contact.html">Góp ý</a></li>
+                    <li><a href="contact.html">Tuyển dụng</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 
     <main>
-        <section id="procedure" class="admission-section">
-            <h2>Thủ tục nhập học</h2>
-            <div class="procedure-content">
-                <div class="procedure-item">
-                    <h3>1. Hồ sơ cần thiết</h3>
-                    <ul>
-                        <li>Học bạ THCS (bản chính)</li>
-                        <li>Giấy khai sinh (bản sao)</li>
-                        <li>Bằng tốt nghiệp THCS (bản chính)</li>
-                        <li>Giấy chứng nhận ưu tiên (nếu có)</li>
-                        <li>4 ảnh 3x4 cm</li>
-                    </ul>
+        <section class="page-hero">
+            <div class="page-hero-content">
+                <h1>Tuyển sinh</h1>
+                <p>Thông tin tuyển sinh năm học 2024-2025</p>
+            </div>
+        </section>
+
+        <section class="admission-intro" data-aos="fade-up">
+            <div class="container">
+                <div class="admission-intro-content" data-aos="fade-right">
+                    <h2>Chào mừng đến với quy trình tuyển sinh của Trường THPT Hàm Rồng</h2>
+                    <p>Trường THPT Hàm Rồng tự hào là nơi đào tạo những thế hệ học sinh có kiến thức vững vàng và phẩm chất đạo đức tốt. Chúng tôi rất vui mừng chào đón các bạn học sinh và phụ huynh quan tâm đến việc gia nhập đại gia đình Hàm Rồng.</p>
+                    <p>Dưới đây là thông tin chi tiết về quy trình tuyển sinh, thời gian, học phí và các chính sách học bổng của nhà trường.</p>
+                    <a href="#form" class="btn-primary">Đăng ký ngay <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="procedure-item">
-                    <h3>2. Quy trình đăng ký</h3>
-                    <ol>
-                        <li>Nộp hồ sơ trực tiếp tại văn phòng trường</li>
-                        <li>Điền đầy đủ thông tin vào phiếu đăng ký</li>
-                        <li>Đóng các khoản phí theo quy định</li>
-                        <li>Nhận biên nhận và thời gian nhập học</li>
-                    </ol>
+                <div class="admission-intro-image" data-aos="fade-left">
+                    <img src="../picture/1.png" alt="Tuyển sinh THPT Hàm Rồng" width="100%" height="400">
                 </div>
             </div>
         </section>
 
-        <section id="schedule" class="admission-section">
-            <h2>Lịch tuyển sinh 2024-2025</h2>
-            <div class="schedule-timeline">
-                <div class="timeline-item">
-                    <div class="date">01/06/2024 - 30/06/2024</div>
-                    <div class="content">
-                        <h3>Nhận hồ sơ đăng ký</h3>
-                        <p>Thời gian: 7h30 - 17h00 các ngày trong tuần</p>
+        <section id="thu-tuc" class="admission-procedure" data-aos="fade-up">
+            <div class="container">
+                <h2>Thủ tục nhập học</h2>
+                <div class="procedure-steps">
+                    <div class="procedure-step" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="step-number">1</div>
+                        <h3>Chuẩn bị hồ sơ</h3>
+                        <ul>
+                            <li>Đơn xin dự tuyển (theo mẫu)</li>
+                            <li>Học bạ THCS (bản sao công chứng)</li>
+                            <li>Giấy khai sinh (bản sao công chứng)</li>
+                            <li>Giấy chứng nhận tốt nghiệp THCS tạm thời hoặc bằng tốt nghiệp THCS</li>
+                            <li>Các giấy tờ ưu tiên (nếu có)</li>
+                            <li>4 ảnh 3x4 (chụp không quá 6 tháng)</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="date">05/07/2024</div>
-                    <div class="content">
-                        <h3>Công bố kết quả</h3>
-                        <p>Kết quả sẽ được thông báo qua website và niêm yết tại trường</p>
+                    <div class="procedure-step" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="step-number">2</div>
+                        <h3>Đăng ký dự tuyển</h3>
+                        <ul>
+                            <li>Nộp hồ sơ trực tiếp tại trường</li>
+                            <li>Đăng ký trực tuyến trên trang web của trường và nộp hồ sơ sau</li>
+                            <li>Nộp lệ phí dự tuyển: 100.000 VNĐ/hồ sơ</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="date">10/07/2024 - 20/07/2024</div>
-                    <div class="content">
-                        <h3>Nhập học</h3>
-                        <p>Hoàn tất thủ tục nhập học và đóng học phí</p>
+                    <div class="procedure-step" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="step-number">3</div>
+                        <h3>Dự thi tuyển sinh</h3>
+                        <ul>
+                            <li>Thi 3 môn: Toán, Ngữ văn, Tiếng Anh</li>
+                            <li>Thời gian thi: 120 phút/môn</li>
+                            <li>Nội dung thi: Chương trình THCS (chủ yếu lớp 9)</li>
+                            <li>Địa điểm: Trường THPT Hàm Rồng</li>
+                        </ul>
+                    </div>
+                    <div class="procedure-step" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="step-number">4</div>
+                        <h3>Công bố kết quả và nhập học</h3>
+                        <ul>
+                            <li>Kết quả trúng tuyển được công bố trên website và bảng tin của trường</li>
+                            <li>Thí sinh trúng tuyển nộp các khoản phí theo quy định</li>
+                            <li>Mua sắm đồng phục và sách giáo khoa</li>
+                            <li>Tham dự buổi định hướng cho tân học sinh</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="fee" class="admission-section">
-            <h2>Học phí và các khoản thu</h2>
-            <div class="fee-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Khoản thu</th>
-                            <th>Số tiền</th>
-                            <th>Ghi chú</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Học phí</td>
-                            <td>2,000,000đ/học kỳ</td>
-                            <td>Thu theo học kỳ</td>
-                        </tr>
-                        <tr>
-                            <td>Đồng phục</td>
-                            <td>500,000đ</td>
-                            <td>2 bộ/năm học</td>
-                        </tr>
-                        <tr>
-                            <td>Bảo hiểm y tế</td>
-                            <td>300,000đ</td>
-                            <td>Theo năm</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <section id="lich-tuyen-sinh" class="admission-schedule" data-aos="fade-up">
+            <div class="container">
+                <h2>Lịch tuyển sinh năm học 2024-2025</h2>
+                <div class="schedule-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Thời gian</th>
+                                <th>Nội dung</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-aos="fade-up" data-aos-delay="100">
+                                <td>01/05/2024 - 30/05/2024</td>
+                                <td>Phát hành và tiếp nhận hồ sơ đăng ký dự tuyển</td>
+                            </tr>
+                            <tr data-aos="fade-up" data-aos-delay="200">
+                                <td>15/06/2024</td>
+                                <td>Thi môn Toán (7h30 - 9h30)</td>
+                            </tr>
+                            <tr data-aos="fade-up" data-aos-delay="300">
+                                <td>15/06/2024</td>
+                                <td>Thi môn Ngữ văn (10h00 - 12h00)</td>
+                            </tr>
+                            <tr data-aos="fade-up" data-aos-delay="400">
+                                <td>16/06/2024</td>
+                                <td>Thi môn Tiếng Anh (7h30 - 9h30)</td>
+                            </tr>
+                            <tr data-aos="fade-up" data-aos-delay="500">
+                                <td>30/06/2024</td>
+                                <td>Công bố kết quả trúng tuyển</td>
+                            </tr>
+                            <tr data-aos="fade-up" data-aos-delay="600">
+                                <td>05/07/2024 - 15/07/2024</td>
+                                <td>Làm thủ tục nhập học</td>
+                            </tr>
+                            <tr data-aos="fade-up" data-aos-delay="700">
+                                <td>01/08/2024</td>
+                                <td>Họp phụ huynh và học sinh định hướng năm học mới</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="fee-notes">
-                <h3>Lưu ý:</h3>
-                <ul>
-                    <li>Học phí có thể được đóng theo học kỳ hoặc cả năm</li>
-                    <li>Nhà trường có chính sách miễn giảm học phí cho học sinh diện chính sách</li>
-                    <li>Các khoản thu khác sẽ được thông báo cụ thể khi nhập học</li>
-                </ul>
+        </section>
+
+        <section id="hoc-phi" class="tuition-fees" data-aos="fade-up">
+            <div class="container">
+                <h2>Học phí và các khoản phí năm học 2024-2025</h2>
+                <div class="fees-cards">
+                    <div class="fee-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="card-header">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <h3>Học phí</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Học phí chính thức: <strong>2.500.000 VNĐ/tháng</strong></p>
+                            <p>Thanh toán theo kỳ (5 tháng): <strong>12.000.000 VNĐ/kỳ</strong></p>
+                            <p>Thanh toán cả năm (giảm 5%): <strong>22.800.000 VNĐ/năm</strong></p>
+                            <p><small>* Học phí được thu vào đầu mỗi kỳ học hoặc đầu năm học</small></p>
+                        </div>
+                    </div>
+                    <div class="fee-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="card-header">
+                            <i class="fas fa-utensils"></i>
+                            <h3>Phí bán trú</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Tiền ăn: <strong>800.000 VNĐ/tháng</strong></p>
+                            <p>Phí giữ xe: <strong>100.000 VNĐ/tháng</strong></p>
+                            <p>Phí quản lý: <strong>200.000 VNĐ/tháng</strong></p>
+                            <p><small>* Phí bán trú được thu theo tháng</small></p>
+                        </div>
+                    </div>
+                    <div class="fee-card" data-aos="flip-left" data-aos-delay="300">
+                        <div class="card-header">
+                            <i class="fas fa-bus"></i>
+                            <h3>Phí đưa đón</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Dưới 5km: <strong>800.000 VNĐ/tháng</strong></p>
+                            <p>Từ 5km - 10km: <strong>1.000.000 VNĐ/tháng</strong></p>
+                            <p>Trên 10km: <strong>1.200.000 VNĐ/tháng</strong></p>
+                            <p><small>* Phí đưa đón được thu theo tháng</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hoc-bong" class="scholarships" data-aos="fade-up">
+            <div class="container">
+                <h2>Chính sách học bổng</h2>
+                <p class="section-intro">Nhà trường có các chương trình học bổng nhằm khuyến khích học sinh có thành tích học tập xuất sắc và hỗ trợ học sinh có hoàn cảnh khó khăn.</p>
+                <div class="scholarship-types">
+                    <div class="scholarship-item" data-aos="fade-right" data-aos-delay="100">
+                        <h3><i class="fas fa-award"></i> Học bổng thành tích học tập</h3>
+                        <ul>
+                            <li>Học bổng xuất sắc: Miễn 100% học phí cho học sinh đạt giải cấp Quốc gia hoặc điểm thi tuyển sinh từ 27/30 trở lên</li>
+                            <li>Học bổng giỏi: Miễn 50% học phí cho học sinh đạt giải cấp Tỉnh/Thành phố hoặc điểm thi tuyển sinh từ 25/30 đến dưới 27/30</li>
+                            <li>Học bổng khuyến khích: Miễn 25% học phí cho học sinh có điểm thi tuyển sinh từ 23/30 đến dưới 25/30</li>
+                        </ul>
+                    </div>
+                    <div class="scholarship-item" data-aos="fade-left" data-aos-delay="200">
+                        <h3><i class="fas fa-hands-helping"></i> Học bổng hỗ trợ hoàn cảnh khó khăn</h3>
+                        <ul>
+                            <li>Học bổng khó khăn đặc biệt: Miễn 100% học phí cho học sinh mồ côi cả cha lẫn mẹ, học sinh có hoàn cảnh đặc biệt khó khăn</li>
+                            <li>Học bổng khó khăn: Miễn 50% học phí cho học sinh thuộc diện hộ nghèo, cận nghèo theo quy định của Nhà nước</li>
+                            <li>Học bổng gia đình: Giảm 25% học phí cho học sinh có anh chị em ruột đang học tại trường</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="scholarship-note" data-aos="fade-up" data-aos-delay="300">
+                    <p><strong>Lưu ý:</strong> Học sinh chỉ được nhận một loại học bổng có giá trị cao nhất. Học bổng được xét duyệt theo từng học kỳ dựa trên kết quả học tập và rèn luyện.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="form" class="registration-form" data-aos="fade-up">
+            <div class="container">
+                <h2>Đăng ký nhận thông tin tư vấn</h2>
+                <form action="/register" method="post" class="admission-form" data-aos="zoom-in">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="student-name">Họ tên học sinh <span class="required">*</span></label>
+                            <input type="text" id="student-name" name="student-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="parent-name">Họ tên phụ huynh <span class="required">*</span></label>
+                            <input type="text" id="parent-name" name="parent-name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Địa chỉ</label>
+                        <input type="text" id="address" name="address">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="current-school">Trường THCS</label>
+                            <input type="text" id="current-school" name="current-school">
+                        </div>
+                        <div class="form-group">
+                            <label for="grade-9">Điểm TB lớp 9 <span class="required">*</span></label>
+                            <input type="number" id="grade-9" name="grade-9" min="0" max="10" step="0.1" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Nội dung tư vấn</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Gửi đăng ký</button>
+                        <button type="reset" class="btn-secondary">Nhập lại</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
 
     <footer>
-        <!-- Copy footer from index.html -->
+        <div class="footer-info">
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+                <h3>Về Trường THPT Hàm Rồng</h3>
+                <p>Trường THPT Hàm Rồng là môi trường giáo dục chất lượng cao, nơi ươm mầm những tài năng trẻ và phát triển toàn diện các kỹ năng cho học sinh.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                <h3>Liên Kết Nhanh</h3>
+                <ul class="footer-links">
+                    <li><a href="../index.html"><i class="fas fa-chevron-right"></i>Trang chủ</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i>Giới thiệu</a></li>
+                    <li><a href="tuyensinh.html"><i class="fas fa-chevron-right"></i>Tuyển sinh</a></li>
+                    <li><a href="news.html"><i class="fas fa-chevron-right"></i>Tin tức & Sự kiện</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i>Thư viện</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="300">
+                <h3>Thông Tin Liên Hệ</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i>Số 123 Đường Lê Duẩn, Quận 1, TP.HCM</a></li>
+                    <li><a href="tel:02838291234"><i class="fas fa-phone"></i>(028) 3829 1234</a></li>
+                    <li><a href="mailto:info@thpthamrong.edu.vn"><i class="fas fa-envelope"></i>info@thpthamrong.edu.vn</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i>Thứ 2 - Thứ 6: 7:00 - 17:00</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="400">
+                <h3>Bản Tin</h3>
+                <p>Đăng ký nhận bản tin để cập nhật những thông tin mới nhất từ nhà trường</p>
+                <form class="newsletter-form" action="/subscribe" method="post">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email của bạn" required>
+                        <button type="submit" aria-label="Đăng ký"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">© 2024 Trường THPT Hàm Rồng. Tất cả các quyền được bảo lưu. | Design by: <a href="https://github.com/hayato-shino05" target="_blank" rel="noopener noreferrer" class="designer-link">Hayato-shino05</a></p>
+            <div class="footer-bottom-links">
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật</a>
+                <a href="#">Sơ đồ website</a>
+            </div>
+        </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Copy scripts from index.html
+        document.addEventListener('DOMContentLoaded', function() {
+            // Khởi tạo hiệu ứng AOS
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+
+            // Form validation
+            const form = document.querySelector('.admission-form');
+            
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    const phone = document.getElementById('phone');
+                    const grade9 = document.getElementById('grade-9');
+                    
+                    // Validate phone number
+                    const phonePattern = /^(0|\+84)[3789][0-9]{8}$/;
+                    if (!phonePattern.test(phone.value)) {
+                        e.preventDefault();
+                        alert('Vui lòng nhập đúng định dạng số điện thoại Việt Nam!');
+                        phone.focus();
+                        return false;
+                    }
+                    
+                    // Validate grade
+                    if (grade9.value < 0 || grade9.value > 10) {
+                        e.preventDefault();
+                        alert('Điểm trung bình phải từ 0 đến 10!');
+                        grade9.focus();
+                        return false;
+                    }
+                    
+                    return true;
+                });
+            }
+        });
     </script>
 </body>
 </html> 
